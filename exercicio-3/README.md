@@ -1,18 +1,28 @@
-## Getting Started
+# Projeto 3: Filtro de Números Pares e Ímpares
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este script permite ao usuário listar todos os números pares ou ímpares dentro de um intervalo numérico, exibindo-os em ordem decrescente.
 
-## Folder Structure
+## Objetivo
 
-The workspace contains two folders by default, where:
+O desafio aqui é combinar laços de repetição, lógica condicional e manipulação de intervalos para filtrar e exibir dados de acordo com múltiplos critérios definidos pelo usuário.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Como Funciona
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1.  O programa solicita que o usuário insira um número inicial e um número final (que deve ser maior que o inicial).
+2.  Em seguida, o usuário deve escolher se deseja listar os números **pares** ou **ímpares**.
+3.  O código itera do número final até o número inicial (em ordem decrescente).
+4.  Dentro do laço, ele verifica se cada número atende à condição de paridade escolhida pelo usuário (par ou ímpar).
+5.  Se o número corresponder ao critério, ele é exibido na tela.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Exemplo de Uso
 
-## Dependency Management
+-   **Número inicial**: `5`
+-   **Número final**: `15`
+-   **Escolha**: `par`
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+A saída será:
+14
+12
+10
+8
+6
