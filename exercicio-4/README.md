@@ -1,18 +1,24 @@
-## Getting Started
+# Projeto 4: Validador de Múltiplos
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este é um programa que testa a compreensão do usuário sobre múltiplos de um número. Ele continua a pedir números até que um valor que **não** seja um múltiplo do número inicial seja inserido.
 
-## Folder Structure
+## Objetivo
 
-The workspace contains two folders by default, where:
+O objetivo deste exercício é praticar o uso de laços de repetição controlados por uma condição específica (`while` ou `do-while`) e o operador de módulo (`%`) para verificar a divisibilidade.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Como Funciona
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1.  O programa primeiro solicita ao usuário um **número inicial** que servirá como base para a verificação.
+2.  Em seguida, ele entra em um laço infinito ou condicional, solicitando que o usuário insira outros números.
+3.  Para cada número inserido, o programa realiza duas verificações:
+    *   Ignora o número se ele for menor que o número inicial.
+    *   Verifica se o número é um múltiplo do número inicial (ou seja, se `numero % numero_inicial == 0`).
+4.  O laço continua enquanto os números inseridos forem múltiplos do número inicial.
+5.  A execução termina quando o usuário digita um número que, ao ser dividido pelo número inicial, deixa um resto diferente de zero.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Exemplo de Uso
 
-## Dependency Management
+-   **Número inicial**: `10`
+-   **Entradas seguintes**: `20`, `50`, `100`, `35`
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+O programa aceitará `20`, `50` e `100`, mas terminará quando `35` for inserido, pois `35 % 10` não é igual a `0`.
